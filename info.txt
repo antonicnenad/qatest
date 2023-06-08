@@ -1,16 +1,15 @@
 QA Tester - Take home assignments
 
-Please submit solved assignments no later than June 8th, 2023 23:59
+
 
 Assignment #1
-We have a simple gallery page that shows images at
-http://the-internet.herokuapp.com/broken_images Can you please automate a testing suite with
-a tool of your choice (Cypress, Selenium, etc) and share a code in a git repository? The key is
-teamwork!
+Simple gallery page that shows images at
+http://the-internet.herokuapp.com/broken_images automate a testing suite with
+a tool of your choice (Cypress, Selenium, etc) and share a code in a git repository
 
 Assignment #2
-There’s a simple file upload page at http://the-internet.herokuapp.com/upload Can you please
-provide a QA report and automate (same as in assignment #1)?
+There’s a simple file upload page at http://the-internet.herokuapp.com/upload
+provide a QA report and automate (same as in assignment #1)
 
 Assignment #3
 You are provided with a guide for API endpoints (https://jsonplaceholder.typicode.com/guide/)
