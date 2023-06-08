@@ -1,0 +1,71 @@
+Functionality Testing:
+Verify that the "Choose File" button opens the file browser dialog.
+Test uploading different file types (e.g., text file, image file, PDF) and verify successful upload.
+Test uploading files of various sizes to ensure there are no limitations or errors.
+Verify that the "UPLOAD" button triggers the file upload process.
+Check if the file is uploaded successfully and accessible on the server.
+Test uploading multiple files simultaneously and ensure all files are uploaded correctly.
+Verify that invalid or unsupported file types are not allowed for upload.
+
+Usability Testing:
+Ensure the file upload page has clear instructions on how to use the functionality.
+Test the responsiveness of the page on different devices and screen sizes.
+Verify that appropriate error messages are displayed if the file upload fails.
+Check if there is a progress indicator during the upload process.
+Verify that the uploaded file is displayed or linked properly after successful upload.
+
+Security Testing:
+Test for any security vulnerabilities like file path traversal attacks.
+Check if the application enforces appropriate file size limitations to prevent abuse.
+Verify that the uploaded files are stored securely and cannot be accessed or modified by unauthorized users.
+Test if the application handles malicious file uploads (e.g., files containing malware or scripts).
+
+Compatibility Testing:
+Test the file upload functionality on different web browsers (e.g., Chrome, Firefox, Safari, Edge) and ensure consistent behavior.
+Test on different operating systems (Windows, macOS, Linux) to identify any platform-specific issues.
+Verify the behavior of the file upload feature in different network conditions (e.g., low bandwidth, high latency).
+
+Performance Testing:
+Test the performance of file upload for various file sizes and measure the upload speed.
+Monitor server response time during the file upload process and ensure it remains within acceptable limits.
+Test the application's ability to handle a high volume of concurrent file uploads and check for any performance degradation.
+
+//Test cases//
+
+Verify the "Choose File" button functionality:
+-Click the "Choose File" button and ensure that the file browser dialog opens.
+-Cancel the file selection and verify that no file is uploaded.
+
+Test successful file uploads:
+-Upload a valid text file and verify that the file is uploaded successfully.
+-Upload an image file (e.g., JPEG, PNG) and verify that the file is uploaded successfully.
+-Upload a PDF file and verify that the file is uploaded successfully.
+-Upload files of various sizes (small, medium, large) and verify successful upload.
+
+Test unsupported file types:
+-Attempt to upload a file with an unsupported file type (e.g., .exe, .mp3) and verify that an appropriate error message is displayed.
+-Verify that the file upload is not allowed for file types other than text, image, or PDF.
+
+Test file size limitations:
+-Upload a file that exceeds the maximum file size limit and verify that an appropriate error message is displayed.
+-Upload a file within the file size limit and ensure it is uploaded successfully.
+
+Test multiple file uploads:
+-Upload multiple files simultaneously and verify that all files are uploaded successfully.
+-Verify that the correct number of files is displayed or linked after successful upload.
+
+Test error handling:
+-Disconnect the internet connection during file upload and verify that an appropriate error message is displayed.
+-Upload a file with a filename that exceeds the maximum character limit and ensure it is handled correctly.
+
+Security testing:
+-Test for file path traversal attacks by attempting to upload files from outside the intended upload directory.
+-Attempt to upload files with malicious content (e.g., files containing scripts or malware) and ensure they are blocked or handled securely.
+
+Usability testing:
+-Test the responsiveness of the file upload page on different devices and screen sizes.
+-Verify that clear instructions are provided on how to use the file upload functionality.
+
+Performance testing:
+-Test the performance of file uploads for different file sizes and measure the upload speed.
+-Simulate concurrent file uploads and verify that the system handles them effectively without performance degradation.
